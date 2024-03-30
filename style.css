@@ -1,0 +1,637 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+    box-sizing: border-box;
+    letter-spacing: .2rem;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+#menu-icon {
+    position: relative;
+    font-size: 3.6rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+    margin-left: 20rem;
+}
+
+
+#navbar {
+    height: 6.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo h2 {
+    font-size: 2rem;
+    color: white;
+}
+
+ul {
+    display: flex;
+    gap: 3rem;
+}
+
+ul li {
+    list-style: none;
+    font-size: 1.7rem;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover {
+    color: brown;
+    text-decoration: underline;
+}
+
+/* section */
+
+#home {
+    position: relative;
+    height: 100vh;
+    background: url('p3.jpeg') no-repeat center center/cover;
+    align-items: center;
+}
+
+.home-content {
+    position: absolute;
+    left: 10rem;
+    top: 25rem;
+    color: white;
+    font-weight: bold;
+}
+
+.text-1 p {
+    font-size: 2rem;
+}
+
+.text-2 h1 {
+    font-size: 3.5rem;
+    margin-top: 1rem;
+}
+
+span{
+    color: rgb(207, 10, 10);
+}
+
+.text-3 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+
+
+.nav-github {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+    margin-right: 2rem;
+    float: left;
+}
+
+.nav-github a {
+    border-radius: 2rem;
+    padding: .8rem 1.5rem;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-github a:hover {
+    background-color: black;
+    color: white;
+}
+
+.nav-github .fa-brands {
+    margin-right: .3rem;
+}
+
+/* About */
+
+#about-section {
+    height: auto;
+}
+
+#about-section .para {
+    padding-top: 6rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#about-section .para a {
+    font-size: 2rem;
+    color: rgb(207, 10, 10);
+    font-weight: bold;
+}
+
+.main-about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 7rem;
+}
+
+.img img {
+    width: 25rem;
+}
+
+.sec-1 {
+    font-size: 1.5rem;
+    width: 50vw;
+}
+
+.sec-1 h1 span {
+    color: rgb(207, 10, 10);
+}
+
+.sec-1 p {
+    margin-top: 1rem;
+}
+
+
+.resume {
+    background-color: black;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    color: white;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.resume:hover {
+    background-color: rgb(207, 10, 10);
+}
+
+
+/* service */
+
+#service {
+    height: auto;
+    text-align: center;
+    color: white;
+}
+
+#service h2 {
+    color: black;
+    padding-top: 6rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#service a {
+    font-size: 2rem;
+    color: rgb(207, 10, 10);
+    font-weight: bold;
+}
+
+.ser-box {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+    margin-top: 10rem;
+}
+
+.boxes {
+    position: relative;
+    background-color: rgb(201, 198, 198);
+    height: 20rem;
+    width: 25rem;
+    text-align: center;
+    color: black;
+    border-radius: .5rem;
+    overflow: hidden;
+    border-top: .7rem solid rgb(207, 10, 10);
+    font-size: 1.5rem;
+}
+
+.boxes::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 25rem;
+    height: .5rem;
+    z-index: -1;
+    opacity: 1;
+}
+
+.boxes:hover::after {
+    content: "";
+    background-color: rgb(207, 10, 10);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25rem;
+    height: 100%;
+    z-index: -1;
+    opacity: 1;
+    transition: .5s ease all;
+}
+
+.boxes:hover {
+    transform: scale(1);
+    color: white;
+}
+
+.boxes h3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#icons-3 .fa-solid {
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: black;
+}
+
+
+/* skill */
+
+#skill {
+    height: auto;
+}
+
+.paras {
+    text-align: center;
+    padding-top: 6rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.paras a {
+    color: rgb(207, 10, 10);
+}
+
+.skill-exe {
+    display: flex;
+    margin-top: 12rem;
+    font-size: 2rem;
+    justify-content: space-around;
+}
+
+.experience p {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.btn {
+    background: black;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.btn:hover {
+    background-color: rgb(207, 10, 10);
+}
+
+.language p {
+    margin-bottom: 1rem;
+    border-bottom: .1rem solid rgb(207, 10, 10);
+}
+
+
+/* contact */
+
+#contact {
+    height: auto;
+    text-align: center;
+}
+
+#contact h2 {
+    padding-top: 6rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#contact a {
+    color: rgb(207, 10, 10);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.con-list {
+    text-align: left;
+}
+
+.last {
+    margin-top: 2rem;
+    display: flex;
+    font-size: 1.8rem;
+    justify-content: space-around;
+}
+
+.home {
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+
+.home h4 {
+    margin-bottom: .5rem;
+}
+
+.fa-solid {
+    margin-left: -3rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: rgb(207, 10, 10);
+}
+
+.user {
+    margin-top: -3rem;
+    margin-left: 2rem;
+}
+
+.location {
+    margin-left: 2rem;
+    margin-top: -3rem;
+}
+
+.e-mail {
+    margin-left: 2rem;
+    margin-top: -3rem;
+}
+
+.box {
+    display: grid;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.box input,
+textarea {
+    margin-top: 1rem;
+    border-radius: .5rem;
+    border: .1rem solid gray;
+    padding: .8rem;
+    outline: none;
+    width: 30rem;
+    resize: none;
+}
+
+
+.tag {
+    padding: .8rem 2rem;
+    background-color: black;
+    border-radius: 2rem;
+    color: white;
+    border: none;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.tag:hover {
+    background-color: rgb(207, 10, 10);
+}
+
+/* footer */
+
+#footer {
+    background-color: black;
+    height: auto;
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+}
+
+.copyright {
+    display: flex;
+    text-align: center;
+    padding-top: 1.5rem;
+    justify-content: center;
+    color: white;
+}
+
+.copyright .fa-brands{
+    color: white;
+}
+
+.copyright .fa-brands {
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.copyright .fa-regular {
+    margin-left: .5rem;
+}
+
+
+/* Responsive */
+
+
+@media(width: 1024px) {
+    .home-content{
+        top: 15rem;
+    }
+    .img img{
+        width: 20rem;
+    }
+}
+
+
+@media(width: 768px){
+    html{
+        font-size: 55%;
+    }
+    .img img{
+        width: 22rem;
+    }
+}
+
+@media(width: 425px){
+    html{
+        font-size: 50%;
+    }
+    #menu-icon{
+        display: block;
+    }
+
+    ul.show{
+        display: flex;
+    }
+    ul {
+        position: absolute;
+        display: none;
+        top: 0;
+        left: 0;
+        width: 300px;
+        min-height: 100vh;
+        padding: 1rem 4%;
+        background: #081b29;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        flex-direction: column;
+        align-items: center;
+    }
+     ul li  {
+        /* flex-direction: column; */
+        font-size: 2rem;
+        margin-top: 1rem;
+        transition: .25s ease;
+        transition-delay: 0s;
+    }
+    .img img{
+        width: 15rem;
+    }
+
+    .main-about{
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .resume{
+        margin-bottom: 1rem;
+    }
+    .ser-box{
+       flex-direction: column;
+       align-items: center;
+       gap: 3rem;
+    }
+    .skill-exe{
+        flex-direction: column;
+        gap: 5rem;
+        margin: 4rem 8rem 2rem 8rem;
+    }
+    .last{
+        flex-direction: column;
+        gap: 5rem;
+        margin: 4rem 8rem 2rem 8rem;
+    }
+}
+
+@media(width: 375px){
+    html{
+        font-size: 50%;
+    }
+    #menu-icon{
+        display: block;
+    }
+
+    ul.show{
+        display: flex;
+    }
+    ul {
+        position: absolute;
+        display: none;
+        top: 0;
+        left: 0;
+        width: 250px;
+        min-height: 100vh;
+        padding: 1rem 4%;
+        background: #081b29;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        flex-direction: column;
+        align-items: center;
+    }
+    ul li  {
+        font-size: 2rem;
+        margin-top: 1rem;
+        transition: .25s ease;
+        transition-delay: 0s;
+    }
+    .img img{
+        width: 15rem;
+    }
+
+    .main-about{
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .resume{
+        margin-bottom: 1rem;
+    }
+    .ser-box{
+       flex-direction: column;
+       align-items: center;
+       gap: 3rem;
+    }
+    .skill-exe{
+        flex-direction: column;
+        gap: 5rem;
+        margin: 4rem 8rem 2rem 8rem;
+    }
+    .last{
+        flex-direction: column;
+        gap: 5rem;
+        margin: 4rem 8rem 2rem 8rem;
+    }
+}
+
+
+@media(width: 320px){
+    html{
+        font-size: 45%;
+    }
+    #menu-icon{
+        display: block;
+    }
+
+    ul.show{
+        display: flex;
+    }
+    ul {
+        position: absolute;
+        display: none;
+        top: 0;
+        left: 0;
+        width: 200px;
+        min-height: 100vh;
+        padding: 1rem 4%;
+        background: #081b29;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        flex-direction: column;
+        align-items: center;
+    }
+    ul li  {
+        font-size: 2rem;
+        margin-top: 1rem;
+        transition: .25s ease;
+        transition-delay: 0s;
+    }
+    .img img{
+        width: 15rem;
+    }
+
+    .main-about{
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .resume{
+        margin-bottom: 1rem;
+    }
+    .ser-box{
+       flex-direction: column;
+       align-items: center;
+       gap: 3rem;
+    }
+    .skill-exe{
+        flex-direction: column;
+        gap: 5rem;
+        margin: 4rem 8rem 2rem 8rem;
+    }
+    .last{
+        flex-direction: column;
+        gap: 5rem;
+        margin: 4rem 8rem 2rem 8rem;
+    }
+    #footer{
+        font-size: 1.5rem;
+    }
+}
